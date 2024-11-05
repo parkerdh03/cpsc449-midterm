@@ -78,7 +78,8 @@ def upload_file():
         uploaded_file = request.files['file']
         if uploaded_file.filename != '':
             filename = secure_filename(uploaded_file.filename)
-            file_extension = os.path.splitext(filename)[1]
+            file_extension = os.path.splitext(filename)[1][1:]  # Get the extension without the dot
+            print(f'Uploaded file: {filename}, Extension: {file_extension}')  # Debugging line
             if file_extension in app.config['ALLOWED_EXTENSIONS']:
                 uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
                 return jsonify({'message': 'File uploaded successfully'}), 201
@@ -105,19 +106,20 @@ def create_user():
     UserService.create_user(username, password)
     return jsonify({'message': 'User created'})
 
-@app.route('/update-user', methods=['PUT'])
-def update_user():
+@app.route('/update-user/<int:id>', methods=['PUT'])
+def update_user(id):
     id = request.json['id']
     username = request.json['username']
     password = request.json['password']
     UserService.update_user(id, username, password)
     return jsonify({'message': 'User updated'})
 
-@app.route('/delete-user', methods=['DELETE'])
-def delete_user():
+@app.route('/delete-user/<int:id>', methods=['DELETE'])
+def delete_user(id):
     id = request.json['id']
     UserService.delete_user(id)
     return jsonify({'message': 'User deleted'})
 
 if __name__ == '__main__':
     app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)

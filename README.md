@@ -17,7 +17,7 @@
 
 1. Login: `/login` (POST)
 2. Protected: `/protected` (GET)
-3. Upload File: `/upload` (POST)
+3. Upload File: `/upload-file` (POST)
 4. Public: `/public` (GET)
 5. Get Users: `/users` (GET)
 6. Create User: `/create-user` (POST)
@@ -27,4 +27,4 @@
 ## Team Members
 
 1. Troy Lee
-2. Member 2
+2. Parker Hill
