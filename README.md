@@ -25,7 +25,7 @@
 8. Delete User: `/delete-user` (DELETE)
 
 ## Video of Endpoint Testing
-https://drive.google.com/file/d/1ObWauysc3sUOD-79_4dGcFWcZXdtjJWw/view?usp=sharing
+https://drive.google.com/file/d/1S0zGblYunq5KAs_flHlej-QrOwr6zzo8/view?usp=sharing
 
 ## Screenshots of Endpoint Testing
 https://docs.google.com/document/d/1eIN0M08WsqQFIB_RmwXemwKwCD489s8cFqQdQi54wxY/edit?usp=sharing
