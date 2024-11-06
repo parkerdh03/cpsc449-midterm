@@ -24,6 +24,12 @@
 7. Update User: `/update-user` (PUT)
 8. Delete User: `/delete-user` (DELETE)
 
+## Video of Endpoint Testing
+https://drive.google.com/file/d/1ObWauysc3sUOD-79_4dGcFWcZXdtjJWw/view?usp=sharing
+
+## Screenshots of Endpoint Testing
+https://docs.google.com/document/d/1eIN0M08WsqQFIB_RmwXemwKwCD489s8cFqQdQi54wxY/edit?usp=sharing
+
 ## Team Members
 
 1. Troy Lee
